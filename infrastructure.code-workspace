@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"name": "aks-engine",
+			"path": "aks-engine"
+		},
+		{
+			"name": "connectivity",
+			"path": "connectivity"
+		},
+		{
+			"name": "devops",
+			"path": "devops"
+		},
+		{
+			"name": "identity",
+			"path": "identity"
+		},
+		{
+			"name": "initialization",
+			"path": "initialization"
+		},
+		{
+			"name": "sandbox",
+			"path": "sandbox"
+		},
+		{
+			"name": "scripts",
+			"path": "scripts"
+		},
+		{
+			"name": "terraform-cloudruler-common",
+			"path": "terraform-cloudruler-common"
+		},
+		{
+			"name": "infrastructure",
+			"path": "infrastructure"
+		},
+		{
+			"path": ".devcontainer"
+		}
+	],
+	"settings": {}
+}
