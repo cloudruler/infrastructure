@@ -3,8 +3,8 @@ git config --global credential.useHttpPath true;
 git credential approve <<EOF
 protocol=https
 host=dev.azure.com
-username=$AZ_DO_USERNAME
-password=$AZ_DO_PAT
+username=$1
+password=$2
 
 EOF
 cd /workspaces
@@ -23,4 +23,4 @@ git clone https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/script
 git clone https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/terraform-cloudruler-common
 
 ln infrastructure/infrastructure.code-workspace ./infrastructure.code-workspace
-ln infrastructure/.devcontainer ./.devcontainer
+ln -s infrastructure/.devcontainer ./.devcontainer
