@@ -8,7 +8,9 @@ password=$AZ_DO_PAT
 
 EOF
 cd /workspaces
-
+#mkdir infrastructure
+#mv infrastructure infrastructure
+#cd infrastructure
 git clone https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/aks-engine
 git clone https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/connectivity
 git clone https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/devops
@@ -21,3 +23,4 @@ git clone https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/script
 git clone https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/terraform-cloudruler-common
 
 ln infrastructure/infrastructure.code-workspace ./infrastructure.code-workspace
+ln infrastructure/.devcontainer ./.devcontainer
