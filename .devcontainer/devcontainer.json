@@ -6,7 +6,7 @@
 	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind" ],
 	"overrideCommand": false,
     "remoteEnv": {
-		"AZDO_PERSONAL_ACCESS_TOKEN": "ioqocz6nz3jzz2oyfctdwxrpglzbuaobi2vxidcauxe76andvrga" //"${localEnv:AZDO_PERSONAL_ACCESS_TOKEN}"
+		"AZDO_PERSONAL_ACCESS_TOKEN": "${localEnv:AZDO_PERSONAL_ACCESS_TOKEN}"
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
