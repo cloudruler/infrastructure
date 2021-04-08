@@ -26,3 +26,11 @@ git clone --config user.email=$2 https://cloudruler@dev.azure.com/cloudruler/inf
 
 ln infrastructure/infrastructure.code-workspace ./infrastructure.code-workspace
 ln -s infrastructure/.devcontainer ./.devcontainer
+
+#Install aks-engine binaries into path. Can be used to deploy an aks-engine
+wget -q --show-progress --https-only --timestamping "https://github.com/Azure/aks-engine/releases/download/v0.61.0/aks-engine-v0.61.0-linux-amd64.tar.gz"
+tar -xvf aks-engine-v0.61.0-linux-amd64.tar.gz
+sudo mv aks-engine-v0.61.0-linux-amd64/aks-engine /usr/local/bin/
+
+rm -rf aks-engine-v0.61.0-linux-amd64
+rm aks-engine-v0.61.0-linux-amd64.tar.gz
