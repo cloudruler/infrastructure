@@ -34,3 +34,8 @@ sudo mv aks-engine-v0.61.0-linux-amd64/aks-engine /usr/local/bin/
 
 rm -rf aks-engine-v0.61.0-linux-amd64
 rm aks-engine-v0.61.0-linux-amd64.tar.gz
+
+
+#wget -q --show-progress --https-only --timestamping "https://github.com/Azure/azure-container-networking/releases/download/v1.2.8/azure-vnet-cni-linux-amd64-v1.2.8.tgz"
+#tar -xvf azure-vnet-cni-linux-amd64-v1.2.8.tgz
+#sudo mv azure-vnet-cni-linux-amd64-v1.2.8/aks-engine /usr/local/bin/
