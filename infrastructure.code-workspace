@@ -37,6 +37,10 @@
 			"path": "infrastructure"
 		},
 		{
+			"name": "images",
+			"path": "images"
+		},
+		{
 			"path": ".devcontainer"
 		}
 	],
