@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.163.1/containers/azure-terraform
 {
 	"name": "Azure Terraform",
-	"image": "cloudruler.azurecr.io/devcontainers/terraform:42",
+	"image": "cloudruler.azurecr.io/devcontainers/terraform:latest",
 	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind" ],
 	"overrideCommand": false,
     "remoteEnv": {
