@@ -5,8 +5,12 @@
 	"image": "cloudruler.azurecr.io/devcontainers/terraform:latest",
 	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind" ],
 	"overrideCommand": false,
-    "remoteEnv": {
-		"AZDO_PERSONAL_ACCESS_TOKEN": "${localEnv:AZDO_PERSONAL_ACCESS_TOKEN}"
+    "containerEnv": {
+		"AZDO_PERSONAL_ACCESS_TOKEN": "${localEnv:AZDO_PERSONAL_ACCESS_TOKEN}",
+		"ARM_TENANT_ID": "${localEnv:ARM_TENANT_ID}",
+		"ARM_SUBSCRIPTION_ID": "${localEnv:ARM_SUBSCRIPTION_ID}",
+		"ARM_CLIENT_ID": "${localEnv:ARM_CLIENT_ID}",
+		"ARM_CLIENT_SECRET": "${localEnv:ARM_CLIENT_SECRET}"
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
