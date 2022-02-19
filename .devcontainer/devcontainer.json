@@ -19,7 +19,10 @@
 			"enabled": true,
 			"args": []
 		},
-		"azureTerraform.terminal": "integrated"
+		"azureTerraform.terminal": "integrated",
+		"files.associations": {
+			"*.hcl": "terraform"
+		}
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
