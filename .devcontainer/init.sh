@@ -23,6 +23,7 @@ git clone --config user.email=$2 https://cloudruler@dev.azure.com/cloudruler/inf
 git clone --config user.email=$2 https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/sandbox
 git clone --config user.email=$2 https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/scripts
 git clone --config user.email=$2 https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/terraform-cloudruler-common
+git clone --config user.email=$2 https://cloudruler@dev.azure.com/cloudruler/infrastructure/_git/images
 
 ln infrastructure/infrastructure.code-workspace ./infrastructure.code-workspace
 ln -s infrastructure/.devcontainer ./.devcontainer
