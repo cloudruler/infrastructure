@@ -10,7 +10,8 @@
 		"ARM_TENANT_ID": "${localEnv:ARM_TENANT_ID}",
 		"ARM_SUBSCRIPTION_ID": "${localEnv:ARM_SUBSCRIPTION_ID}",
 		"ARM_CLIENT_ID": "${localEnv:ARM_CLIENT_ID}",
-		"ARM_CLIENT_SECRET": "${localEnv:ARM_CLIENT_SECRET}"
+		"ARM_CLIENT_SECRET": "${localEnv:ARM_CLIENT_SECRET}",
+		"TFE_TOKEN": "${localEnv:TFE_TOKEN}"
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 

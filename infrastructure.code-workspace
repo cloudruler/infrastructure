@@ -41,6 +41,10 @@
 			"path": "images"
 		},
 		{
+			"name": "terraform-github-aks_node",
+			"path": "terraform-github-aks_node"
+		},
+		{
 			"path": ".devcontainer"
 		}
 	],
