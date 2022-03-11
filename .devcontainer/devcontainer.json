@@ -11,6 +11,7 @@
 		"ARM_SUBSCRIPTION_ID": "${localEnv:ARM_SUBSCRIPTION_ID}",
 		"ARM_CLIENT_ID": "${localEnv:ARM_CLIENT_ID}",
 		"ARM_CLIENT_SECRET": "${localEnv:ARM_CLIENT_SECRET}",
+		"GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}",
 		"TFE_TOKEN": "${localEnv:TFE_TOKEN}"
 	},
 	// Set *default* container specific settings.json values on container create.
