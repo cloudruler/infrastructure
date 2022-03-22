@@ -29,10 +29,6 @@
 			"path": "scripts"
 		},
 		{
-			"name": "terraform-cloudruler-common",
-			"path": "terraform-cloudruler-common"
-		},
-		{
 			"name": "infrastructure",
 			"path": "infrastructure"
 		},
