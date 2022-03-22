@@ -11,7 +11,7 @@ $keyVaultName = "cloudruler"
 $Env:ARM_CLIENT_SECRET = Get-AzKeyVaultSecret -Name vault-automation-secret -VaultName $keyVaultName -AsPlainText
 $Env:AZDO_PERSONAL_ACCESS_TOKEN = Get-AzKeyVaultSecret -Name azuredevops-pat-brianmoore -VaultName $keyVaultName -AsPlainText
 $Env:GITHUB_TOKEN = Get-AzKeyVaultSecret -Name brianmoore180-gmail-github-pat -VaultName $keyVaultName -AsPlainText
-$Env:TFE_TOKEN= Get-AzKeyVaultSecret -Name terraformcloud-devops-pipeline-user-token -VaultName $keyVaultName -AsPlainText
+$Env:TFE_TOKEN= Get-AzKeyVaultSecret -Name terraform-cloud-cloudruler-user-api-token -VaultName $keyVaultName -AsPlainText
 
 Write-Host "Grabbed key vault secrets. Starting VS Code..."
 Start-Process -FilePath "C:\Users\brian\AppData\Local\Programs\Microsoft VS Code\Code.exe"
