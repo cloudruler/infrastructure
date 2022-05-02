@@ -37,6 +37,15 @@
 			"path": "images"
 		},
 		{
+			"path": "aws-sandbox"
+		},
+		{
+			"path": "aws-connectivity"
+		},
+		{
+			"path": "terraform-aws-k8s"
+		},
+		{
 			"name": "terraform-azurerm-aks_cluster",
 			"path": "terraform-azurerm-aks_cluster"
 		},
