@@ -10,8 +10,9 @@ Write-Host "Logged in to Azure. Grabbing Key Vault secrets..."
 $keyVaultName = "cloudruler"
 $Env:ARM_CLIENT_SECRET = Get-AzKeyVaultSecret -Name vault-automation-secret -VaultName $keyVaultName -AsPlainText
 $Env:AZDO_PERSONAL_ACCESS_TOKEN = Get-AzKeyVaultSecret -Name azuredevops-pat-brianmoore -VaultName $keyVaultName -AsPlainText
-$Env:GITHUB_TOKEN = Get-AzKeyVaultSecret -Name brianmoore180-gmail-github-pat -VaultName $keyVaultName -AsPlainText
+$Env:GITHUB_TOKEN = Get-AzKeyVaultSecret -Name github-app-cloudruler-terraform-cloud -VaultName $keyVaultName -AsPlainText
 $Env:TFE_TOKEN = Get-AzKeyVaultSecret -Name terraform-cloud-cloudruler-organization-api-token -VaultName $keyVaultName -AsPlainText
+$Env:TF_TOKEN_app_terraform_io = Get-AzKeyVaultSecret -Name terraform-cloud-cloudruler-user-api-token -VaultName $keyVaultName -AsPlainText
 $Env:AWS_ACCESS_KEY_ID = "AKIAYWMUBRLUNUB44LXG"
 $Env:AWS_SECRET_ACCESS_KEY = Get-AzKeyVaultSecret -Name aws-iam-key-brianmoore -VaultName $keyVaultName -AsPlainText
 $Env:AWS_REGION = "us-west-1"
